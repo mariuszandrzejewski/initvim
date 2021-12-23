@@ -18,6 +18,7 @@ o.splitright = true
 o.tabstop = 4
 o.timeoutlen = 300
 o.ttimeoutlen = 10
+o.termguicolors = true
 o.updatetime =  300
 o.whichwrap = o.whichwrap + { 
 	['h'] = true,
