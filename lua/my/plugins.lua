@@ -1,3 +1,4 @@
+
 return require('packer').startup({function()
     --plugin manager
     use 'wbthomason/packer.nvim'
@@ -12,6 +13,8 @@ return require('packer').startup({function()
         'romgrk/barbar.nvim',
         requires = {'kyazdani42/nvim-web-devicons'}
     }
+    use 'dstein64/nvim-scrollview'
+
 end,
 config = {
     --floating window
