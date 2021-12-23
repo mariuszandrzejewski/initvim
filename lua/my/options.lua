@@ -9,6 +9,7 @@ o.mouse = 'a'
 o.number = true
 o.scrolloff = 8
 o.shiftwidth = 4
+o.showmode = false
 o.showtabline = 2
 o.sidescrolloff = 8
 o.signcolumn = 'yes'
