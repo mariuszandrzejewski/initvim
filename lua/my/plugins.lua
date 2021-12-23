@@ -21,7 +21,7 @@ return require('packer').startup({function()
         requires = {
             'nvim-lua/plenary.nvim'
         },
-        tag = 'release' -- To use the latest release
+        tag = 'release'
     }
     
     use 'wellle/targets.vim'
@@ -37,11 +37,7 @@ return require('packer').startup({function()
     use {
         "folke/which-key.nvim",
         config = function()
-            require("which-key").setup {
-                -- your configuration comes here
-                -- or leave it empty to use the default settings
-                -- refer to the configuration section below
-            }
+            require("which-key").setup {}
         end
     }
 end,
