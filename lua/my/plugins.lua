@@ -23,6 +23,16 @@ return require('packer').startup({function()
         },
         tag = 'release' -- To use the latest release
     }
+    
+    use 'wellle/targets.vim'
+    use 'tpope/vim-surround'
+    use 'tpope/vim-eunuch'
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 end,
 config = {
     --floating window
