@@ -4,3 +4,4 @@ require 'my.options'
 --plugin config
 require 'my.lualine'
 require 'my.barbar'
+require 'my.gitsigns'
