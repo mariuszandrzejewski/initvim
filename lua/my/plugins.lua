@@ -2,6 +2,7 @@ return require('packer').startup({function()
     --plugin manager
     use 'wbthomason/packer.nvim'
 
+    use 'shaunsingh/nord.nvim'
 end,
 config = {
     --floating window
