@@ -55,6 +55,22 @@ return require('packer').startup({function()
             require("which-key").setup {}
         end
     }
+
+    --language support
+    
+    --lsp
+    use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+    use 'hrsh7th/nvim-cmp'
+
+    use 'onsails/lspkind-nvim'
+    
+    --snippets
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/vim-vsnip'
 end,
 config = {
     --floating window
