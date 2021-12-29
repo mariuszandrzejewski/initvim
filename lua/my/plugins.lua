@@ -22,7 +22,8 @@ return require('packer').startup({function()
         },
         tag = 'release'
     }
-    
+
+    use 'editorconfig/editorconfig-vim'
     use 'wellle/targets.vim'
     use 'tpope/vim-surround'
     use 'tpope/vim-eunuch'
@@ -35,7 +36,7 @@ return require('packer').startup({function()
 
     use {
         'nvim-telescope/telescope.nvim',
-        requires = { 
+        requires = {
             {'nvim-lua/plenary.nvim'},
             {'kyazdani42/nvim-web-devicons'}
         }
@@ -56,7 +57,7 @@ return require('packer').startup({function()
     }
 
     --language support
-    
+
     --lsp
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
@@ -66,7 +67,7 @@ return require('packer').startup({function()
     use 'hrsh7th/nvim-cmp'
 
     use 'onsails/lspkind-nvim'
-    
+
     --snippets
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
