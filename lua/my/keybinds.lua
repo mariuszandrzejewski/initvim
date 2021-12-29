@@ -21,6 +21,13 @@ vim.g.mapleader = " "
 
 if not vim.g.my_mappings then
     local mappings = {
+        -- telescope
+        {'n', '<leader>ff', '<cmd>Telescope find_files<cr>'},
+        {'n', '<leader>fi', '<cmd>Telescope git_files<cr>'},
+        {'n', '<leader>fg', '<cmd>Telescope live_grep<cr>'},
+        {'n', '<leader>fs', '<cmd>Telescope grep_string<cr>'},
+        {'n', '<leader>fb', '<cmd>Telescope buffers<cr>'},
+        {'n', '<leader>fh', '<cmd>Telescope help_tags<cr>'},
     }
     set_keymaps(mappings)
     vim.g.my_mappings = true
