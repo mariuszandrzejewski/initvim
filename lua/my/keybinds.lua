@@ -37,6 +37,8 @@ if not vim.g.my_mappings then
         {"n", "<leader>xq", "<cmd>Trouble quickfix<cr>"},
         {"n", "gR", "<cmd>Trouble lsp_references<cr>"},
 
+        --sane terminal insert mode exit
+        {'t', '<Esc>', '<C-\\><C-n>'}
     }
     set_keymaps(mappings)
     vim.g.my_mappings = true
