@@ -2,6 +2,14 @@ return require('packer').startup({function(use)
     --plugin manager
     use 'wbthomason/packer.nvim'
 
+    use 'lewis6991/impatient.nvim'
+    use {
+        "antoinemadec/FixCursorHold.nvim",
+        run = function()
+            vim.g.curshold_updatime = 1000
+        end,
+    }
+
     --appearance
     use 'shaunsingh/nord.nvim'
     use {
