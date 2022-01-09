@@ -16,10 +16,9 @@ function set_keymaps (mappings)
 
 end
 
-mapkey("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-
 if not vim.g.my_mappings then
+    mapkey('', '<Space>', '<Nop>', opts)
+    vim.g.mapleader = ' '
     local mappings = {
         -- telescope
         {'n', '<leader>p', '<cmd>Telescope find_files<cr>'},
