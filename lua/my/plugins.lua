@@ -56,6 +56,13 @@ return require('packer').startup({function(use)
         },
         run = 'make'
     }
+    use {
+        "nvim-telescope/telescope-frecency.nvim",
+        config = function()
+            require"telescope".load_extension("frecency")
+        end,
+        requires = {"tami5/sqlite.lua"}
+    }
 
     use {
         'folke/which-key.nvim',

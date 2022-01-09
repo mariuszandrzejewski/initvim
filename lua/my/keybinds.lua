@@ -22,7 +22,9 @@ vim.g.mapleader = " "
 if not vim.g.my_mappings then
     local mappings = {
         -- telescope
-        {'n', '<leader>ff', '<cmd>Telescope find_files<cr>'},
+        {'n', '<leader>p', '<cmd>Telescope find_files<cr>'},
+        {'n', '<leader>ff', '<cmd>Telescopes find_files<cr>'},
+        {'n', '<leader>fr', '<cmd>Telescopes frecency<cr>'},
         {'n', '<leader>fi', '<cmd>Telescope git_files<cr>'},
         {'n', '<leader>fg', '<cmd>Telescope live_grep<cr>'},
         {'n', '<leader>fs', '<cmd>Telescope grep_string<cr>'},
