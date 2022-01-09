@@ -29,6 +29,14 @@ if not vim.g.my_mappings then
         {'n', '<leader>fs', '<cmd>Telescope grep_string<cr>'},
         {'n', '<leader>fb', '<cmd>Telescope buffers<cr>'},
         {'n', '<leader>fh', '<cmd>Telescope help_tags<cr>'},
+
+        {"n", "<leader>xx", "<cmd>Trouble<cr>"},
+        {"n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>"},
+        {"n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>"},
+        {"n", "<leader>xl", "<cmd>Trouble loclist<cr>"},
+        {"n", "<leader>xq", "<cmd>Trouble quickfix<cr>"},
+        {"n", "gR", "<cmd>Trouble lsp_references<cr>"},
+
     }
     set_keymaps(mappings)
     vim.g.my_mappings = true

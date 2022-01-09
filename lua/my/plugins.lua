@@ -82,6 +82,10 @@ return require('packer').startup({function(use)
     use 'hrsh7th/nvim-cmp'
 
     use 'onsails/lspkind-nvim'
+    use {
+        "folke/trouble.nvim",
+        requires = "kyazdani42/nvim-web-devicons"
+    }
 
     --snippets
     use 'hrsh7th/cmp-vsnip'
