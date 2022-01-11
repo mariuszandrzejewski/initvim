@@ -35,6 +35,7 @@ return require('packer').startup({function(use)
     use 'wellle/targets.vim'
     use 'tpope/vim-surround'
     use 'tpope/vim-eunuch'
+    use 'windwp/nvim-autopairs'
     use {
         'numToStr/Comment.nvim',
         config = function()
@@ -49,7 +50,6 @@ return require('packer').startup({function(use)
             {'kyazdani42/nvim-web-devicons'}
         }
     }
-
     use {'nvim-telescope/telescope-fzf-native.nvim',
         requires = {
             'nvim-telescope/telescope.nvim'
@@ -80,7 +80,6 @@ return require('packer').startup({function(use)
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
-
     use 'onsails/lspkind-nvim'
     use {
         "folke/trouble.nvim",
