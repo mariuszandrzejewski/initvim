@@ -2,23 +2,42 @@ return require('packer').startup({function(use)
     --plugin manager
     use 'wbthomason/packer.nvim'
 
-    use 'lewis6991/impatient.nvim'
+    use {
+        'lewis6991/impatient.nvim',
+        config = function()
+            require('impatient')
+        end
+    }
+
     use {
         "antoinemadec/FixCursorHold.nvim",
-        run = function()
-            vim.g.curshold_updatime = 1000
+        config = function()
+            vim.g.curshold_updatime = 100
         end,
     }
 
     --appearance
-    use 'shaunsingh/nord.nvim'
+    use {
+        'shaunsingh/nord.nvim',
+        config = function()
+            vim.cmd('colorscheme nord')
+        end,
+    }
+
+
     use {
         'nvim-lualine/lualine.nvim',
-        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+        requires = {'kyazdani42/nvim-web-devicons', opt = true},
+        config = function()
+            require('my.lualine')
+        end,
     }
     use {
         'romgrk/barbar.nvim',
-        requires = {'kyazdani42/nvim-web-devicons'}
+        requires = {'kyazdani42/nvim-web-devicons'},
+        config = function ()
+            require('my.barbar')
+        end
     }
     use 'dstein64/nvim-scrollview'
 
@@ -28,14 +47,22 @@ return require('packer').startup({function(use)
         requires = {
             'nvim-lua/plenary.nvim'
         },
-        tag = 'release'
+        tag = 'release',
+        config = function () 
+            require('my.gitsigns')
+        end
     }
 
     use 'editorconfig/editorconfig-vim'
     use 'wellle/targets.vim'
     use 'tpope/vim-surround'
     use 'tpope/vim-eunuch'
-    use 'windwp/nvim-autopairs'
+    use {
+        'windwp/nvim-autopairs',
+        config = function ()
+            require('my.nvim-autopairs')
+        end
+    }
     use {
         'numToStr/Comment.nvim',
         config = function()

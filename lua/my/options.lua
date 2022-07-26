@@ -34,4 +34,3 @@ o.whichwrap = o.whichwrap + {
 o.wrap = false
 o.writebackup = false
 
-vim.cmd('colorscheme nord')
