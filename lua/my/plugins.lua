@@ -89,6 +89,10 @@ return require('packer').startup({function(use)
     --snippets
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
+
+    --language specific
+    use 'simrat39/rust-tools.nvim'
+    use 'rust-lang/rust.vim'
 end,
 config = {
     --floating window
