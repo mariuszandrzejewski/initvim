@@ -5,6 +5,8 @@ o.clipboard = o.clipboard + { 'unnamedplus' }
 o.cmdheight = 2
 o.expandtab = true
 o.fileencoding = 'utf-8'
+o.laststatus = 3 --global statusline
+o.winbar='%=%m %f'
 o.mouse = 'a'
 o.number = true
 o.relativenumber = true
