@@ -32,9 +32,11 @@ return require('packer').startup({function(use)
             require('my.lualine')
         end,
     }
+
+    use "kyazdani42/nvim-web-devicons"
     use {
         'romgrk/barbar.nvim',
-        requires = {'kyazdani42/nvim-web-devicons'},
+        requires = {'kyazdani42/nvim-web-devicons', opt = true},
         config = function ()
             require('my.barbar')
         end
