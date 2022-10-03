@@ -101,8 +101,10 @@ return require('packer').startup({function(use)
     }
 
     --language support
+    use {'williamboman/mason.nvim'}
 
     --lsp
+    use {'williamboman/mason-lspconfig.nvim', requires = 'williamboman/mason.nvim'}
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'

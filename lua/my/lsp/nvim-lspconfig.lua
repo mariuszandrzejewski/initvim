@@ -1,3 +1,7 @@
+require('mason-lspconfig').setup({
+    automatic_installation = true
+});
+
 local nvim_lsp = require('lspconfig')
 
 vim.diagnostic.config({
