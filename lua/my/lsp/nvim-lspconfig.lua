@@ -64,7 +64,9 @@ local servers = {
     'jsonls',
     'vimls',
     'tsserver',
-    'bashls'
+    'bashls',
+    'apex_ls',
+    'visualforce_ls',
 }
 
 -- Setup lspconfig.
