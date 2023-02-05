@@ -50,7 +50,7 @@ return require('packer').startup({function(use)
             'nvim-lua/plenary.nvim'
         },
         tag = 'release',
-        config = function () 
+        config = function ()
             require('my.gitsigns')
         end
     }
@@ -104,6 +104,7 @@ return require('packer').startup({function(use)
     use {'williamboman/mason.nvim'}
 
     --lsp
+    use 'tjdevries/nlua.nvim'
     use {'williamboman/mason-lspconfig.nvim', requires = 'williamboman/mason.nvim'}
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
