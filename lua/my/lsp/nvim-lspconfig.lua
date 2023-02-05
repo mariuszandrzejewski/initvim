@@ -67,6 +67,7 @@ local servers = {
     'bashls',
     'apex_ls',
     'visualforce_ls',
+    'jedi_language_server',
 }
 
 -- Setup lspconfig.
