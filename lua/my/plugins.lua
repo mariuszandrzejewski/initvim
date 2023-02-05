@@ -123,4 +123,13 @@ require('lazy').setup({
     --language specific
     'simrat39/rust-tools.nvim',
     'rust-lang/rust.vim',
+
+    --treesitter
+    {
+        'nvim-treesitter/nvim-treesitter',
+        build = ':TSUpdate',
+        config = function()
+            require('my.treesitter')
+        end
+    }
 })
