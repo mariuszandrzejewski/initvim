@@ -9,13 +9,6 @@ return require('packer').startup({function(use)
         end
     }
 
-    use {
-        "antoinemadec/FixCursorHold.nvim",
-        config = function()
-            vim.g.curshold_updatime = 100
-        end,
-    }
-
     --appearance
     use {
         'shaunsingh/nord.nvim',
