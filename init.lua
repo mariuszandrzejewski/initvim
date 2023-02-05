@@ -1,3 +1,4 @@
+vim.g.mapleader = ' '
 require 'my.plugins'
 require 'my.options'
 require 'my.keybinds'
