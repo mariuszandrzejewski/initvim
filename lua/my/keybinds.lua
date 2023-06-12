@@ -23,7 +23,6 @@ if not vim.g.my_mappings then
         -- telescope
         {'n', '<leader>p', '<cmd>Telescope find_files<cr>'},
         {'n', '<leader>ff', '<cmd>Telescopes find_files<cr>'},
-        {'n', '<leader>fr', '<cmd>Telescopes frecency<cr>'},
         {'n', '<leader>fi', '<cmd>Telescope git_files<cr>'},
         {'n', '<leader>fg', '<cmd>Telescope live_grep<cr>'},
         {'n', '<leader>fs', '<cmd>Telescope grep_string<cr>'},

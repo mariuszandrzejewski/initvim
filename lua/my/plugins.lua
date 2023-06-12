@@ -81,13 +81,6 @@ require('lazy').setup({
         },
         run = 'make'
     },
-    {
-        'nvim-telescope/telescope-frecency.nvim',
-        config = function()
-            require'telescope'.load_extension('frecency')
-        end,
-        dependencies = {'tami5/sqlite.lua'}
-    };
 
     {
         'folke/which-key.nvim',
